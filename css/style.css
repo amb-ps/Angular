@@ -160,3 +160,8 @@
     border-color: var(--bs-btn-hover-border-color);
   }
 
+  table, th, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px
+  }

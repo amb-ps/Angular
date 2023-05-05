@@ -29,36 +29,42 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="Route-3.html">Route-3</a>
                     </li>
-                  
+                    <li class="nav-item">
+                        <a class="nav-link "  href="Route-4.html">Route-4</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div>
-        <div style="border: 3px solid black;margin: 5px;display: inline-flex;width: 90%;">
-            <div style="border: 2px solid black;margin: 20px;width: 45%;text-align: center;">
+        <div style="border: 3px solid black; margin: 5px 5px 0 5px; display: inline-flex; border-bottom: 0; width: 90%; height: 230px;">
+            <div style="border: 2px solid black;margin: 20px;width: 50%;text-align: center;">
             <p>Count Down Timer</p> 
             <br/>
             <p id="countdowntimer">0</p>
             </div>
-            <div style="border: 2px solid black;margin: 20px;">
+            <div style="border: 2px solid black;margin: 20px;width: 50%;">
                 <div style="margin:5px">
-                    Enter time limit : <input type="text" name="seconds" value="" id="startTimer"/>
-                    <input type="button" name="start/pause" value="Start" id="pause" onclick="countTimers()"/>
-                    <!-- <button id="pause">Pause</button>
-                    <button id="resume">Resume</button> -->
+                    Enter timer limit : <input type="text" style="border:2px solid" name="seconds" value="" id="startTimer"/>
+                </div>
+                <div style="margin-left: 140px;margin-top: 10px;">    
+                    <input type="button" style="border:2px solid" name="start/pause" value="Start/Pause" id="pause" onclick="countTimers()"/>
                     <input type="hidden" id="timerCount" value=""/>
                     <button id="reset" onClick="window.location.reload()">Reset</button>
-                    <div id="pausedAt"></div>
                 </div>
+                <div id="pausedAt" style="margin-left:25px"></div>
             </div>
         </div>
-        <div style="display: -webkit-inline-box">
-            <div id="currTime" style="text-align: center;"></div>
-            <div style ="margin-left: 300px;">
-                Started :<span id="startedCount"> 0 </span>
-                Paused :<span id="pausedCount"> 0 </span> 
+        <div style="display: -webkit-inline-box;border: 3px solid black; margin: 0 5px;border-top: 0; width: 90%;">
+            <div id="currTime" style="margin-left: 30px;width: 50%;"></div>
+            <div style="margin-left: 100px">
+                <span id="startedCount" style="margin-left: 20px;"> 0 </span>
+                <p>Started</p>
+            </div>
+            <div style ="margin-left:50px">
+                 <span id="pausedCount" style="margin-left: 20px;"> 0 </span>
+                <p>Paused</p> 
             </div>
          </div>
     </div>
